@@ -1,11 +1,41 @@
 import React, {Component} from 'react';
-import {  MDBContainer } from "mdbreact";
+
+
 
 class TableComp extends Component{
 
+    
+  constructor(props) {
+    
+    super(props);
+
+    this.state = {
+      items: props.items
+    };
+   }
+
+  
+  renderTableData() {
+    
+    return this.props.items.map((data, index) => {
+       const { state, confirmed, active, recovered, deaths } = data //destructuring
+       return (
+          <tr key={state}>
+            <td><b>{state}</b></td>
+             <td>{confirmed}</td>
+             <td>{active}</td>
+             <td>{recovered}</td>
+             <td>{deaths}</td>
+          </tr>
+       )
+    })
+ }
+
+
     render(){
         // const tableStyle = {overflow-Y : hidden};
-
+        // const tableData =this.state.items.slice(1, this.state.items.length);
+       
         return(
             
             < div className="card text-center mb-3" >
@@ -13,75 +43,26 @@ class TableComp extends Component{
             <div className="card-body">
                <div className=" "  >
                <div className="text-center">
-                  <h6 className="blue-text "><strong>State wise data of Covid19</strong></h6>
-                   <p className="pink-text "><strong>Last Updated On Official Website- </strong></p>
-                   <p className="pink-text "><strong>Last Refreshed- </strong></p>
+                  {/* <h6 className="blue-text "><strong>State wise data of Covid19</strong></h6> */}
+                    <p className="pink-text "><strong>State wise data of Covid19 </strong></p>
+                   {/* <p className="pink-text "><strong>Last Refreshed- </strong></p> */} 
                </div>
                <div className="table-responsive   w-100 d-block d-md-table" >
 
                      <table className="table">
                         <thead>
                           <tr>
-                              <th scope="col">#</th>
-                            <th scope="col">State</th>
+                              <th scope="col">State/UT</th>
+                            
                             <th scope="col">Total Case</th>
+                            <th scope="col">Active</th>
                             <th scope="col">Discharged</th>
                               <th scope="col">Deaths</th>
-                            <th scope="col">Indian</th>
-                              <th scope="col">Foreign</th>
+                         
                           </tr>
                         </thead>
                         <tbody>
-                        {/* {% for item in regional_data %} */}
-                          <tr>
-                          <th scope="row">dfddfd</th>
-
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                          </tr>
-                          <tr>
-                          <th scope="row">dfddfd</th>
-
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                          </tr>
-                          <tr>
-                          <th scope="row">dfddfd</th>
-
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                          </tr><tr>
-                          <th scope="row">dfddfd</th>
-
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                          </tr><tr>
-                          <th scope="row">dfddfd</th>
-
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                            <td><b>ddfdfdfd</b></td>
-                          </tr>
-                        {/* {% endfor %} */}
+                       {this.renderTableData()}
                         </tbody>
                    </table>
                </div>

@@ -18,16 +18,16 @@ class Header extends React.Component {
   }
 
   render() {
-    const bgPink = {backgroundColor: '#e91e63'}
+    // const bgPink = {backgroundColor: 'purple-gradient'}
     // const container = {height: 1300}
     return(
       <div>
         <Router>
           <header>
-            <MDBNavbar style={bgPink} dark expand="md" scrolling fixed="top">
+            <MDBNavbar className ="purple-gradient"  dark expand="md" scrolling fixed="top">
               <MDBContainer>
               <MDBNavbarBrand href="/">
-                  <strong>Navbar</strong>
+                  <strong>GoCoronaGo</strong>
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={ this.onClick } />
               <MDBCollapse isOpen = { this.state.collapse } navbar>

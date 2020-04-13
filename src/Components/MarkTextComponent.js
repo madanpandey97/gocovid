@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {  MDBContainer } from "mdbreact";
+
 class MarkText extends Component{
 
     render(){
@@ -8,7 +8,7 @@ class MarkText extends Component{
             
             <div className="purple-gradient wow fadeIn mt-4">
                 <marquee>
-                    <strong className="pink-text">
+                    <strong className="white-text">
                                 This is not official website.
                                 We are providing data directly fetched from Ministry of Health and Family Welfare.
                                 More Updates are comming soon.
