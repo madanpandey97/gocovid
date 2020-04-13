@@ -65,7 +65,7 @@ class DataPanel extends Component{
                                         
                                           <li className="list-inline-item text-center  z-depth-1 px-3">
                                                       <img src="assets/img/icon-infected.png"  alt ="virus" className="mt-1" />
-                                                      <h5 className="blue-text mt-2" id="textsize"><strong>Total cases</strong></h5>
+                                                      <h5 className="blue-text mt-2" id="textsize"><strong>Total </strong></h5>
                                                       <h5 className="pink-text  pb-2 " id="textsize"><i class="fas fa-hospital"></i> &nbsp;{covid.confirmed}</h5>
                         
                                           </li>

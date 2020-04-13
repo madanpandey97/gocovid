@@ -35,25 +35,25 @@ class Header extends React.Component {
                   <MDBNavItem active>
                       <MDBNavLink to="#">Home</MDBNavLink>
                   </MDBNavItem>
-                  <MDBNavItem>
+                  {/* <MDBNavItem>
                       <MDBNavLink to="#">Features</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                       <MDBNavLink to="#">Pricing</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#">Options</MDBNavLink>
-                  </MDBNavItem>
+                    <MDBNavLink to="#">Options</MDBNavLink> */}
+                  {/* </MDBNavItem> */}
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
                   <MDBNavItem>
-                    <MDBNavLink to="#"><MDBIcon fab icon="facebook-f" /></MDBNavLink>
+                    <MDBNavLink to="https://www.facebook.com/madanpandey97"><MDBIcon fab icon="facebook-f" /></MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#"><MDBIcon fab icon="twitter" /></MDBNavLink>
+                    <MDBNavLink to="https://www.linkedin.com/in/madan-pandey/"><MDBIcon fab icon="linkedin" /></MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#"><MDBIcon fab icon="instagram" /></MDBNavLink>
+                    <MDBNavLink to="https://github.com/madanpandey97"><MDBIcon fab icon="github" /></MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>
