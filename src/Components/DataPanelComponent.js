@@ -36,7 +36,7 @@ class DataPanel extends Component{
     render(){
 
       const covid = this.props.items;
-      console.log(covid)
+     
 
         return(
 
