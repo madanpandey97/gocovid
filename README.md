@@ -1,6 +1,6 @@
 # Covid19 Live tracker url(https://www.gocovid.gq/)
 
-* supported of mobile screen and desktop screen
+* Supported of mobile screen and desktop screen
 
 Api used from Covid19India
 
