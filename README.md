@@ -1,8 +1,8 @@
 # Covid19 Live tracker url(https://www.gocovid.gq/)
 
-* Supported of mobile screen and desktop screen
+* GoCovid application is designed for mobile and desktop screen. It shows the real time corona virus data of current situation in India. Project is fully implemented in React and more feature is coming soon such as real time graph tracking, the covid prediction and many other things.
 
-Api used from Covid19India
+* Api used from Covid19India
 
 #### Tech Stack
 * React
